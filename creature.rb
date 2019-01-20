@@ -74,6 +74,7 @@ class Creature
 		
 		# Retaliation
 		p enemy
+		#enemy.show_stats
 		if enemy.life > 0
 			enemy_speed_roll = rand( enemy.speed ).floor
 			your_speed_roll = rand( speed ).floor
@@ -91,6 +92,8 @@ class Creature
 				end
 			end
 		end
+		p self
+		#show_stats
 	end
 
 	def show_stats

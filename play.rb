@@ -48,12 +48,15 @@ end
 def the_choice
 	puts "Now, brave adventurer, choose thy enemy!"
 	puts "t: Training Dummy - A simple but surprisingly resistant construct made for the sole purpose of being hit"
+	puts "r: Rival - Someone just like you... quite literally"
 	clear 1
 	
 	while true
 		key = STDIN.getch
 		if key == 't'
 			return TrainingDummy.new
+		elsif key == 'r'
+			return Rival.new
 		else
 			puts "Invalid choice!"
 		end
